@@ -1,11 +1,8 @@
-# Data-Analysis-Projects-for-Hacktoberfest
-Add your data analysis/Artifical Intelligence/Machine Learning projects in this repo for participating in Hacktoberfest
+# Data-Analysis-Projects
+Add your data analysis/Artifical Intelligence/Machine Learning projects in this repo for the welfare of data science community
 
-# Hacktoberfest_2022
 
-This repository is encourage people to contribute to open source throughout october.
-
-![ Hacktoberfest_2022](https://user-images.githubusercontent.com/60610128/193233241-0ed224b3-d193-4fd0-9ecc-8420621c0029.png)
+![ Data Science](https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80)
 
 ## Rules to contribute to this Repo
 
