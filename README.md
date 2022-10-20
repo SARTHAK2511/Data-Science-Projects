@@ -1,4 +1,4 @@
-# Data-Analysis-Projects
+# Data-Science-Projects
 Add your data analysis/Artifical Intelligence/Machine Learning projects in this repo for the welfare of data science community
 
 
