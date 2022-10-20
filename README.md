@@ -7,7 +7,7 @@ Add your data analysis/Artifical Intelligence/Machine Learning projects in this 
 ## Rules to contribute to this Repo
 
 - Use any programming language
-- Use any data analytic tools and techniques and create data analysis projects.
+- Use any data science tools and techniques and create data  projects.
 
 
 ## Steps for Contributing
