@@ -8,6 +8,7 @@ Add your data analysis/Artifical Intelligence/Machine Learning projects in this 
 
 - Use any programming language
 - Use any data science tools and techniques and create data  projects.
+- Projects should be different from the uploaded ones or it should be optimized version of existing ones
 
 
 ## Steps for Contributing
