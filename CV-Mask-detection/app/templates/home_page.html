@@ -1,0 +1,78 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1>Welcome to the mask detector live</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container-fluid">
+        <div id="frame_container" class="row">
+            <div class="col-12">
+                <img src="/static/images/stay-safe.jpg"
+                     class="img-thumbnail img-fluid mx-auto d-block">
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-6 d-flex justify-content-end">
+                <button id="start" onclick="start()" class="btn btn-outline-success"><i class="fa fa-video-camera"
+                                                                                        aria-hidden="true"></i> Start
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+                <button id="stop" onclick="stop()" class="btn btn-danger active"><i class="fa fa-stop"
+                                                                                    aria-hidden="true"></i> Stop
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h4>What is this?</h4>
+        </div>
+        <div class="row">
+            <p>This is a mask detector, an algorithm based on deep neural networks that detects people through your
+                camera and write a bounding box around faces,
+                looking if they were masks or not. This is not for security purpose.</p>
+            <p>If you are interested in more details, check this post I wrote!</p>
+        </div>
+        <div class="row">
+            <h4>Who I am</h4>
+        </div>
+        <div class="row mb-5">
+            <p>I'm Galileo Parise, data scientist and matematician, and I've developed what you see during Italy's
+                second lockdown in November, in which I had lots of free time. If you are interested in this and ohter
+                stories,
+                you can follow me on Linkedin and on Medium.
+                Hoping to get soon over this situation,
+                I hope you all good health:</p>
+            <p class="d-flex mx-auto lead text-danger"><strong>please, stay safe and wear a mask</strong>.</p>
+            <p></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block custom_js %}
+<script>
+$(document).ready(function(){
+    $('#image-detector').attr('class', 'nav-item');
+    $('#live').attr('class', 'nav-item active');
+})
+
+    function stop(){
+        $("img").attr("src", "/static/images/stay-safe.jpg");
+        $("#stop").attr("class","btn btn-danger active");
+
+        $("#start").attr("class","btn btn-outline-success");
+    }
+    function start(){
+        $("img").attr("src", "{{url_for('main.video_feed')}}");
+        $("#start").attr("class","btn btn-success active");
+
+        $("#stop").attr("class","btn btn-outline-danger");
+    }
+
+</script>
+
+{% endblock %}
